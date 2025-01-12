@@ -1,0 +1,266 @@
+const truckModels = [
+  {
+    brand: "Scania",
+    bgImg: "../img/scaniaBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "R-Series",
+        description: "Premium truck for long-haul operations.",
+        capacity: "40 tons",
+        features: ["Efficient engines", "Advanced safety systems"],
+        img: "../img/scaniaRseries.png",
+        engines: [
+          "R410",
+          "R440",
+          "R450",
+          "R460",
+          "R480",
+          "R500",
+          "R520",
+          "R530",
+          "R540",
+          "R580",
+          "R590",
+          "R620",
+          "R650",
+          "R660",
+          "R730",
+          "R770",
+        ]
+      },
+      {
+        name: "S-Series",
+        description: "Ultimate comfort and efficiency for drivers.",
+        capacity: "40 tons",
+        features: ["High cab design", "Fuel-efficient engine"],
+        img: "../img/scaniaSseries.png",
+        engines: [
+          "S410",
+          "S460",
+          "S520",
+          "S530",
+          "S560"
+        ]
+      },
+      {
+        name: "P-Series",
+        description: "Versatile truck for urban and regional delivery.",
+        capacity: "20 tons",
+        features: ["Compact design", "Fuel-efficient technology"],
+        img: "../img/scaniaPseries.png",
+        engines: [
+          "G410",
+          "G450",
+          "G460",
+          "G500",
+          "G540"
+        ]
+      },
+      {
+        name: "G-Series",
+        description: "Flexible truck for various applications.",
+        capacity: "30 tons",
+        features: ["Durable chassis", "Optimized suspension"],
+        img: "../img/scaniaGseries.png",
+      },
+    ],
+  },
+  {
+    brand: "Volvo",
+    bgImg: "../img/volvoBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "FH",
+        description: "Flagship truck for long-distance hauling.",
+        capacity: "50 tons",
+        features: ["Powerful engine", "Luxurious interior"],
+        img: "../img/volvoFHseries.png",
+      },
+      {
+        name: "FMX",
+        description: "Designed for demanding construction conditions.",
+        capacity: "30 tons",
+        features: ["Heavy-duty chassis", "All-wheel drive options"],
+        img: "../img/volvoFMXseries.png",
+      },
+      {
+        name: "FM",
+        description: "Multi-purpose truck for regional and urban operations.",
+        capacity: "25 tons",
+        features: ["Flexible configurations", "Efficient driveline"],
+        img: "../img/volvoFMseries.png",
+      },
+      {
+        name: "FE",
+        description: "Urban distribution truck.",
+        capacity: "18 tons",
+        features: ["Compact size", "Electric options available"],
+        img: "../img/volvoFEseries.png",
+      },
+    ],
+  },
+  {
+    brand: "Ford",
+    bgImg: "../img/fordBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "F-MAX",
+        description: "Award-winning truck for long-haul transport.",
+        capacity: "40 tons",
+        features: ["Spacious cab", "EcoTorq engine"],
+        img: "../img/fordFMAXseries.png",
+      },
+      {
+        name: "Cargo Series",
+        description: "Versatile truck for distribution and construction.",
+        capacity: "20-30 tons",
+        features: ["Fuel efficiency", "Robust design"],
+        img: "../img/fordCargoseries.png",
+      },
+    ],
+  },
+  {
+    brand: "Renault",
+    bgImg: "../img/renaultBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "T High",
+        description: "High-performance truck for long-distance transport.",
+        capacity: "44 tons",
+        features: ["Comfortable cabin", "Fuel-efficient driveline"],
+        img: "../img/renaultThighseries.png",
+      },
+      {
+        name: "C-Series",
+        description: "Truck for construction and heavy-duty use.",
+        capacity: "33 tons",
+        features: ["Durable chassis", "Advanced traction control"],
+        img: "../img/renaultCseries.png",
+      },
+      {
+        name: "D-Series",
+        description: "Efficient truck for urban distribution.",
+        capacity: "18 tons",
+        features: ["Compact design", "Electric options available"],
+        img: "../img/renaultDseries.png",
+      },
+    ],
+  },
+  {
+    brand: "Mercedes-Benz",
+    bgImg: "../img/mercedesBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "Actros",
+        description: "Advanced long-haul truck with cutting-edge technology.",
+        capacity: "45 tons",
+        features: ["MirrorCam", "Predictive Powertrain Control"],
+        img: "../img/mercedesActrosseries.png",
+      },
+      {
+        name: "Arocs",
+        description: "Heavy-duty truck for construction and off-road use.",
+        capacity: "41 tons",
+        features: ["Robust chassis", "Flexible axle configurations"],
+        img: "../img/mercedesArocsseries.png",
+      },
+      {
+        name: "Econic",
+        description: "Specialized truck for urban applications.",
+        capacity: "18 tons",
+        features: ["Low-entry cab", "Electric drivetrain option"],
+        img: "../img/mercedesEconicseries.png",
+      },
+    ],
+  },
+  {
+    brand: "DAF",
+    bgImg: "../img/dafBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "XF",
+        description: "Flagship truck for long-haul transport.",
+        capacity: "44 tons",
+        features: ["PACCAR engine", "Efficient aerodynamics"],
+        img: "../img/dafXFseries.png",
+      },
+      {
+        name: "CF",
+        description: "Versatile truck for regional and construction use.",
+        capacity: "40 tons",
+        features: ["Flexible axle configurations", "Comfortable cabin"],
+        img: "../img/dafCFseries.png",
+      },
+      {
+        name: "LF",
+        description: "Light-duty truck for urban delivery.",
+        capacity: "12-18 tons",
+        features: ["Compact design", "Fuel efficiency"],
+        img: "../img/dafLFseries.png",
+      },
+    ],
+  },
+  {
+    brand: "MAN",
+    bgImg: "../img/manBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "TGX",
+        description: "High-performance truck for long-distance transport.",
+        capacity: "44 tons",
+        features: ["Fuel-efficient engine", "Driver comfort features"],
+        img: "../img/manTGXseries.png",
+      },
+      {
+        name: "TGS",
+        description: "Robust truck for construction and distribution.",
+        capacity: "41 tons",
+        features: ["Durable build", "High load capacity"],
+        img: "../img/manTGSseries.png",
+      },
+      {
+        name: "TGM",
+        description: "Mid-range truck for regional transport.",
+        capacity: "26 tons",
+        features: ["Versatility", "Optimized fuel consumption"],
+        img: "../img/manTGMseries.png",
+      },
+    ],
+  },
+  {
+    brand: "Iveco",
+    bgImg: "../img/ivecoBGimg.png",
+    info: "/img/scania-info.png",
+    models: [
+      {
+        name: "S-WAY",
+        description: "Modern truck for long-haul transport.",
+        capacity: "44 tons",
+        features: ["Fuel efficiency", "Advanced connectivity"],
+        img: "../img/ivecoSWAYseries.png",
+      },
+      {
+        name: "X-WAY",
+        description: "Flexible truck for on-road and off-road operations.",
+        capacity: "35 tons",
+        features: ["Rugged design", "Enhanced traction"],
+        img: "../img/ivecoXWAYseries.png",
+      },
+      {
+        name: "Eurocargo",
+        description: "Urban and regional distribution truck.",
+        capacity: "12-19 tons",
+        features: ["Compact size", "Natural gas options"],
+        img: "../img/ivecoEurocargoseries.png",
+      },
+    ],
+  },
+];
+export default truckModels
