@@ -56,7 +56,7 @@ const router = createBrowserRouter(
   ]
   ,
 {
-  basename: "/TruckData",
+  basename: "/Truck-Data",
 }
 );
 
